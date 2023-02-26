@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Site</title>
+</head>
+<body>
+    {% for post in posts %}
+    <h1>
+        {{ post.title }}
+    </h1>
+    <h2>
+        {{ post.text }}
+    </h2>
+    <audio controls>
+        <source src="{{ post.file }}" type="audio/mpeg">
+    </audio>
+    {% endfor %}
+
+</body>
+
+<title>Upload new File</title>
+<h1>Upload mp3 song</h1>
+<form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload>
+</form>
+
+
+<html>
+<head>
+    <title>Delete files using button click in Flask</title>
+</head>
+<body>
+    <a href="/remove/wellness" id="remove" class="btn btn-success mr-2">Remove</a>
+</body>
+
+<body>
+
+    <input type="text" class="live-search-box" placeholder="search here" />
+
+    <ul class="live-search-list" type="None">
+
+
+</body>
+
+    </ul>
+
+
+<body>
+    <h1>Download mp3 song </h1>
+    <form action="/" method="POST">
+
+        text: <input type="text" name="text">
+        <br />
+        <input type="submit">
+    </form>
+</body>
+
+</html>
+
+
+
+</html>
